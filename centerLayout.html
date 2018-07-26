@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>布局</title>
+<title>居中布局</title>
 <style>
 body,html{width:100%;height: 100%;}
 *{margin:0;padding:0;}
@@ -25,10 +25,17 @@ h3{margin-bottom:10px;text-indent: 2em;font-size:16px;}
 .parent6{position: relative;}
 .child6{position: absolute;transform: translateY(-50%);top:50%;}
 .parent7{display: flex;align-items:center;}
+
+.parentT{height:200px;background-color: #ccc;width:500px;}
+.parent8{text-align: center;display: table-cell;vertical-align: middle;}
+.child8{display: inline-block;}
+.parent9{position: relative;}
+.child9{position: absolute;transform: translate(-50%,-50%);top:50%;left:50%;}
+.parent10{display: flex;align-items: center;justify-content: center;}
 </style>
 </head>
 <body>
-	<h1>CSS布局DEMO</h1>		
+	<h1>CSS布局DEMO——居中布局</h1>		
 	<h2>水平居中布局</h2>
 	<div class="section">
 		<h3>inline-block + text-align</h3>
@@ -71,6 +78,25 @@ h3{margin-bottom:10px;text-indent: 2em;font-size:16px;}
 		<h3>flex + align-items</h3>
 		<div class="parent7 parentVertical">
 			<div class="child7 child">demo</div>
+		</div>
+	</div>
+	<h2>水平垂直居中布局</h2>
+	<div class="section">
+		<h3>inline-block + text-align + table-cell + vertical-align</h3>
+		<div class="parent8 parentT">
+			<div class="child8 child">demo</div>
+		</div>
+	</div>
+	<div class="section">
+		<h3>absolute + transform</h3>
+		<div class="parent9 parentT">
+			<div class="child9 child">demo</div>
+		</div>
+	</div>
+	<div class="section">
+		<h3>flex + justify-content + align-items</h3>
+		<div class="parent10 parentT">
+			<div class="child10 child">demo</div>
 		</div>
 	</div>
 </body>
