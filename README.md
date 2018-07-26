@@ -135,3 +135,15 @@
 ```
 ### 等高布局
 ![avatar](https://mirror198829.github.io/static/github/sameHigh.png)
+#### table
+``` css
+.parent10{display: table;width: 100%;table-layout: fixed}
+.left10{display: table-cell;width: 100px;}
+.right10{display: table-cell}
+```
+### flex
+``` css
+.parent11{display: flex}
+.left11{margin-right: 10px}
+.right11{flex:1;}
+```
