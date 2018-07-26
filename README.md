@@ -92,3 +92,5 @@
 .left4{width:100px;margin-right: 10px}
 .right4{flex:1;}
 ```
+### 不定宽+自适应
+![avatar](https://mirror198829.github.io/static/github/colum2.png)
