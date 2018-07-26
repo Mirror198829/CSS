@@ -37,3 +37,7 @@
 .parent6{position: relative;}
 .child6{position: absolute;transform: translateY(-50%);top:50%;}
 ```
+#### flex + align-items
+``` css
+.parent7{display: flex;align-items:center;}
+```
