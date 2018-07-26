@@ -41,3 +41,19 @@
 ``` css
 .parent7{display: flex;align-items:center;}
 ```
+### 水平垂直居中
+#### inline-block + text-align + table-cell + vertical-align
+``` css
+.parentT{height:200px;background-color: #ccc;width:500px;}
+.parent8{text-align: center;display: table-cell;vertical-align: middle;}
+.child8{display: inline-block;}
+```
+#### absolute + transform
+``` css
+.parent9{position: relative;}
+.child9{position: absolute;transform: translate(-50%,-50%);top:50%;left:50%;}
+```
+#### flex + justify-content + align-items
+``` css
+.parent10{display: flex;align-items: center;justify-content: center;}
+```
