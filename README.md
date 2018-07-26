@@ -53,3 +53,7 @@
 .parent9{position: relative;}
 .child9{position: absolute;transform: translate(-50%,-50%);top:50%;left:50%;}
 ```
+#### flex + justify-content + align-items
+``` css
+.parent10{display: flex;align-items: center;justify-content: center;}
+```
