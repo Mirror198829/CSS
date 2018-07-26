@@ -26,3 +26,8 @@
 ``` css
 .parent4{display:flex;justify-content:center;}
 ```
+### 垂直居中
+  父元素与子元素高度不定
+``` css
+.parent5{display: table-cell;vertical-align: middle;}
+```
