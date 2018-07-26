@@ -61,4 +61,34 @@
 ## 多列布局
 ### 定宽+自适应
 ![avatar](https://mirror198829.github.io/static/github/colum1.png)
+``` html
+<div class="parent1 parent">
+  <div class="left1 left">left</div>
+  <div class="right1 right">
+    <p>right</p>
+    <p>right</p>
+    <p>right</p>
+  </div>
+</div>
+```
 #### float + margin
+``` css
+.left1{float:left;width:100px;}
+.right1{margin-left: 120px}
+```
+#### float + overflow
+``` css
+.left2{float:left;width: 100px}
+.right2{overflow:hidden;}
+```
+#### table
+``` css
+.left3{display: table-cell;width:100px;table-layout: fixed;}
+.right3{display: table-cell}
+```
+#### flex
+``` css
+.parent4{display: flex}
+.left4{width:100px;margin-right: 10px}
+.right4{flex:1;}
+```
