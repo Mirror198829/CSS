@@ -113,3 +113,18 @@
 ```
 ### 等分布局
 ![avatar](https://mirror198829.github.io/static/github/average.png)
+``` html
+<div class="parent8 parent clearfix">
+  <div class="column8 column"><p>column</p></div>
+  <div class="column8 column"><p>column</p></div>
+  <div class="column8 column"><p>column</p></div>
+  <div class="column8 column"><p>column</p></div>
+</div>
+```
+#### float
+并不理想
+``` css
+.parent8{margin-left: -20px;}
+.column8{float:left;width:25%;padding-right:20px;box-sizing: border-box;}
+```
+
