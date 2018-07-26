@@ -19,6 +19,12 @@ h3{margin-bottom:10px;text-indent: 2em;font-size:16px;}
 .parent3{position: relative;}
 .child3{position: absolute;left:50%;transform: translateX(-50%);}
 .parent4{display: flex;justify-content: center;}
+
+.parentVertical{width:60px;height:400px;background-color: #ccc;}
+.parent5{display: table-cell;vertical-align: middle;}
+.parent6{position: relative;}
+.child6{position: absolute;transform: translateY(-50%);top:50%;}
+.parent7{display: flex;align-items:center;}
 </style>
 </head>
 <body>
@@ -46,6 +52,25 @@ h3{margin-bottom:10px;text-indent: 2em;font-size:16px;}
 		<h3>flex + justify-content</h3>
 		<div class="parent4 parent">
 			<div class="child4 child">demo</div>
+		</div>
+	</div>
+	<h2>垂直居中布局</h2>
+	<div class="section">
+		<h3>table-cell + vertical-align</h3>
+		<div class="parent5 parentVertical">
+			<div class="child5 child">demo</div>
+		</div>
+	</div>
+	<div class="section">
+		<h3>absolute + tranform</h3>
+		<div class="parent6 parentVertical">
+			<div class="child6 child">demo</div>
+		</div>
+	</div>
+	<div class="section">
+		<h3>flex + align-items</h3>
+		<div class="parent7 parentVertical">
+			<div class="child7 child">demo</div>
 		</div>
 	</div>
 </body>
