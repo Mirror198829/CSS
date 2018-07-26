@@ -6,6 +6,7 @@
 <style>
 body,html{width:100%;height: 100%;}
 *{margin:0;padding:0;}
+ul,li{list-style:none;}
 .section{padding:15px 0;}
 h1{text-align: center;padding:5px 0;font-size:30px;}
 h2{font-size:20px;}
@@ -32,6 +33,9 @@ h3{margin-bottom:10px;text-indent: 2em;font-size:16px;}
 .parent9{position: relative;}
 .child9{position: absolute;transform: translate(-50%,-50%);top:50%;left:50%;}
 .parent10{display: flex;align-items: center;justify-content: center;}
+
+.itemLst{border:1px dashed #ccc;display: flex;align-items: flex-end;margin-bottom: 20px;justify-content: center}
+.item{width:100px;}
 </style>
 </head>
 <body>
@@ -99,5 +103,12 @@ h3{margin-bottom:10px;text-indent: 2em;font-size:16px;}
 			<div class="child10 child">demo</div>
 		</div>
 	</div>
+	<h2>水平底部对齐布局</h2>
+	<ul class="itemLst">
+		<li class="item" style="height:50px;background-color: red"></li>
+		<li class="item" style="height:100px;background-color: yellow"></li>
+		<li class="item" style="height:200px;background-color: blue"></li>
+		<li class="item" style="height:70px;background-color: green"></li>
+	</ul>
 </body>
 </html>
