@@ -26,3 +26,18 @@
 ``` css
 .parent4{display:flex;justify-content:center;}
 ```
+### 垂直居中
+  父元素与子元素高度不定
+#### table-cell + vertical-align
+``` css
+.parent5{display: table-cell;vertical-align: middle;}
+```
+#### absolute + tranform
+``` css
+.parent6{position: relative;}
+.child6{position: absolute;transform: translateY(-50%);top:50%;}
+```
+#### flex + align-items
+``` css
+.parent7{display: flex;align-items:center;}
+```
