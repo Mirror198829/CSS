@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>布局</title>
-	<style>
-		body,html{width:100%;height: 100%;}
-		*{margin:0;padding:0;}
-		.section{padding:15px 0;}
-		h1{text-align: center;padding:5px 0;font-size:30px;}
-		h2{font-size:20px;}
-		h3{margin-bottom:10px;text-indent: 2em;font-size:16px;}
-		.parent{background-color: #ccc}
-		.child{background-color: #333;color:#fff;padding:10px 5px;}
-		.parent1{text-align: center;}
-		.child1{display: inline-block;}
-	</style>
+<meta charset="UTF-8">
+<title>布局</title>
+<style>
+body,html{width:100%;height: 100%;}
+*{margin:0;padding:0;}
+.section{padding:15px 0;}
+h1{text-align: center;padding:5px 0;font-size:30px;}
+h2{font-size:20px;}
+h3{margin-bottom:10px;text-indent: 2em;font-size:16px;}
+.parent{background-color: #ccc;height:45px;}
+.child{background-color: #333;color:#fff;line-height: 45px;padding:0 5px;}
+.parent1{text-align: center;}
+.child1{display: inline-block;}
+.parent2{}
+.child2{display: table;margin:0 auto;}
+.parent3{position: relative;}
+.child3{position: absolute;left:50%;transform: translateX(-50%);}
+.parent4{display: flex;justify-content: center;}
+</style>
 </head>
 <body>
 	<h1>CSS布局DEMO</h1>		
@@ -23,6 +28,24 @@
 		<h3>inline-block + text-align</h3>
 		<div class="parent1 parent">
 			<div class="child1 child">demo</div>
+		</div>
+	</div>
+	<div class="section">
+		<h3>table + margin</h3>
+		<div class="parent2 parent">
+			<div class="child2 child">demo</div>
+		</div>
+	</div>
+	<div class="section">
+		<h3>absolute + transform</h3>
+		<div class="parent3 parent">
+			<div class="child3 child">demo</div>
+		</div>
+	</div>
+	<div class="section">
+		<h3>flex + justify-content</h3>
+		<div class="parent4 parent">
+			<div class="child4 child">demo</div>
 		</div>
 	</div>
 </body>
