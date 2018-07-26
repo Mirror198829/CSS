@@ -57,3 +57,100 @@
 ``` css
 .parent10{display: flex;align-items: center;justify-content: center;}
 ```
+---
+## 多列布局
+### 定宽+自适应
+![avatar](https://mirror198829.github.io/static/github/colum1.png)
+``` html
+<div class="parent1 parent">
+  <div class="left1 left">left</div>
+  <div class="right1 right">
+    <p>right</p>
+    <p>right</p>
+    <p>right</p>
+  </div>
+</div>
+```
+#### float + margin
+``` css
+.left1{float:left;width:100px;}
+.right1{margin-left: 120px}
+```
+#### float + overflow
+``` css
+.left2{float:left;width: 100px}
+.right2{overflow:hidden;}
+```
+#### table
+``` css
+.left3{display: table-cell;width:100px;table-layout: fixed;}
+.right3{display: table-cell}
+```
+#### flex
+``` css
+.parent4{display: flex}
+.left4{width:100px;margin-right: 10px}
+.right4{flex:1;}
+```
+### 不定宽+自适应
+![avatar](https://mirror198829.github.io/static/github/colum2.png)
+#### float + overflow
+``` css
+.left5{float:left;}
+.right5{overflow:hidden;}
+```
+### table
+``` css
+.parent6{display: table;width: 100%}
+.left6{display: table-cell;width:0.1%;}
+.right6{display: table-cell}
+```
+### flex
+``` css
+.parent7{display: flex}
+.left7{margin-right: 10px}
+.right7{flex:1;}
+```
+### 等分布局
+![avatar](https://mirror198829.github.io/static/github/average.png)
+``` html
+<div class="parent8 parent clearfix">
+  <div class="column8 column"><p>column</p></div>
+  <div class="column8 column"><p>column</p></div>
+  <div class="column8 column"><p>column</p></div>
+  <div class="column8 column"><p>column</p></div>
+</div>
+```
+#### float
+并不理想
+``` css
+.parent8{margin-left: -20px;}
+.column8{float:left;width:25%;padding-right:20px;box-sizing: border-box;}
+```
+#### flex
+``` css
+.parent9{display: flex}
+.column9{flex:1;}
+.column9+.column9{margin-left:20px;}
+```
+### 等高布局
+![avatar](https://mirror198829.github.io/static/github/sameHigh.png)
+#### table
+``` css
+.parent10{display: table;width: 100%;table-layout: fixed}
+.left10{display: table-cell;width: 100px;}
+.right10{display: table-cell}
+```
+#### flex
+``` css
+.parent11{display: flex}
+.left11{margin-right: 10px}
+.right11{flex:1;}
+```
+#### float
+``` css
+.parent12{overflow: hidden;}
+.left12{float:left;margin-right: 10px}
+.right12{overflow: hidden}
+.left12,.right12{padding-bottom:9999px;margin-bottom: -9999px}
+```
