@@ -57,3 +57,8 @@
 ``` css
 .parent10{display: flex;align-items: center;justify-content: center;}
 ```
+---
+## 多列布局
+### 定宽+自适应
+![avatar](https://mirror198829.github.io/static/github/colum1.png)
+#### float + margin
