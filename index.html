@@ -3,10 +3,27 @@
 <head>
 	<meta charset="UTF-8">
 	<title>布局</title>
+	<style>
+		body,html{width:100%;height: 100%;}
+		*{margin:0;padding:0;}
+		.section{padding:15px 0;}
+		h1{text-align: center;padding:5px 0;font-size:30px;}
+		h2{font-size:20px;}
+		h3{margin-bottom:10px;text-indent: 2em;font-size:16px;}
+		.parent{background-color: #ccc}
+		.child{background-color: #333;color:#fff;padding:10px 5px;}
+		.parent1{text-align: center;}
+		.child1{display: inline-block;}
+	</style>
 </head>
 <body>
-	<div>
-	123123123	
+	<h1>CSS布局DEMO</h1>		
+	<h2>水平居中布局</h2>
+	<div class="section">
+		<h3>inline-block + text-align</h3>
+		<div class="parent1 parent">
+			<div class="child1 child">demo</div>
+		</div>
 	</div>
 </body>
 </html>
