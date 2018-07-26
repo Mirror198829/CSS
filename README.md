@@ -147,3 +147,10 @@
 .left11{margin-right: 10px}
 .right11{flex:1;}
 ```
+#### float
+``` css
+.parent12{overflow: hidden;}
+.left12{float:left;margin-right: 10px}
+.right12{overflow: hidden}
+.left12,.right12{padding-bottom:9999px;margin-bottom: -9999px}
+```
