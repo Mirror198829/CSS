@@ -133,3 +133,5 @@
 .column9{flex:1;}
 .column9+.column9{margin-left:20px;}
 ```
+### 等高布局
+![avatar](https://mirror198829.github.io/static/github/sameHigh.png)
