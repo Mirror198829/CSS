@@ -71,22 +71,22 @@
   </div>
 </div>
 ```
-#### float + margin
+#### float + margin （问题：左侧浮动脱离文档流）
 ``` css
 .left1{float:left;width:100px;}
 .right1{margin-left: 120px}
 ```
-#### float + overflow
+#### float + overflow （问题：左侧浮动脱离文档流）
 ``` css
 .left2{float:left;width: 100px}
 .right2{overflow:hidden;}
 ```
-#### table
+#### table (可实现左右等高)
 ``` css
 .left3{display: table-cell;width:100px;table-layout: fixed;}
 .right3{display: table-cell}
 ```
-#### flex
+#### flex (可实现左右等高)
 ``` css
 .parent4{display: flex}
 .left4{width:100px;margin-right: 10px}
