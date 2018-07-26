@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>多列布局</title>
+<style>
+body,html{width:100%;height: 100%;}
+*{margin:0;padding:0;}
+ul,li{list-style:none;}
+.clearfix{ zoom:1;}
+.clearfix:after{ content:''; display:block; clear:both;}
+.section{padding:15px 0;}
+h1{text-align: center;padding:5px 0;font-size:30px;}
+h2{font-size:20px;}
+h3{margin-bottom:10px;text-indent: 2em;font-size:16px;}
+.parent{border:1px dashed #333;box-sizing: border-box;}
+.left{background-color: #cf1200;color:#fff;}
+.right{background-color: #4a7fc0;color:#fff;}
+/*定宽+自适应*/
+.left1{float:left;width:100px;}
+.right1{margin-left: 120px}
+.left2{float:left;width: 100px}
+.right2{overflow:hidden;}
+.parent3{display: table;width: 100%}
+.left3{display: table-cell;width:100px;table-layout: fixed;}
+.right3{display: table-cell}
+.parent4{display: flex}
+.left4{width:100px;margin-right: 10px}
+.right4{flex:1;}
+/*不定宽+自适应*/
+.left5{float:left;}
+.right5{overflow:hidden;}
+.parent6{display: table;width: 100%}
+.left6{display: table-cell;width:0.1%;}
+.right6{display: table-cell}
+.parent7{display: flex}
+.left7{margin-right: 10px}
+.right7{flex:1;}
+/*等分布局*/
+.column{height:100px;background-color: red;color:#fff;}
+.column:nth-child(2){background-color: #ccc}
+.column:nth-child(3){background-color: blue}
+.column:nth-child(4){background-color: green}
+.parent8{margin-left: -20px;}
+.column8{float:left;width:25%;padding-right:20px;box-sizing: border-box;}
+.parent9{display: flex}
+.column9{flex:1;}
+.column9+.column9{margin-left:20px;}
+/*等高布局*/
+.parent10{display: table;width: 100%;table-layout: fixed}
+.left10{display: table-cell;width: 100px;}
+.right10{display: table-cell}
+.parent11{display: flex}
+.left11{margin-right: 10px}
+.right11{flex:1;}
+.parent12{overflow: hidden;}
+.left12{float:left;margin-right: 10px}
+.right12{overflow: hidden}
+.left12,.right12{padding-bottom:9999px;margin-bottom: -9999px}
+</style>
+</head>
+<body>
+	<h1>CSS布局DEMO——多列布局</h1>		
+	<h2>定宽+自适应</h2>
+	<div class="section">
+		<h3>float+margin</h3>
+		<div class="parent1 parent">
+			<div class="left1 left">left</div>
+			<div class="right1 right">
+				<p>right</p>
+				<p>right</p>
+				<p>right</p>
+			</div>
+		</div>
+	</div>
+	<div class="section">
+		<h3>float + overflow</h3>
+		<div class="parent2 parent">
+			<div class="left2 left">left</div>
+			<div class="right2 right">
+				<p>right</p>
+				<p>right</p>
+				<p>right</p>
+			</div>
+		</div>
+	</div>
+	<div class="section">
+		<h3>table</h3>
+		<div class="parent3 parent">
+			<div class="left3 left">left</div>
+			<div class="right3 right">
+				<p>right</p>
+				<p>right</p>
+				<p>right</p>
+			</div>
+		</div>
+	</div>
+	<div class="section">
+		<h3>flex</h3>
+		<div class="parent4 parent">
+			<div class="left4 left">left</div>
+			<div class="right4 right">
+				<p>right</p>
+				<p>right</p>
+				<p>right</p>
+			</div>
+		</div>
+	</div>
+
+	<h2>不定宽+自适应</h2>
+	<div class="section">
+		<h3>float + overflow</h3>
+		<div class="parent5 parent">
+			<div class="left5 left">left</div>
+			<div class="right5 right">
+				<p>right</p>
+				<p>right</p>
+				<p>right</p>
+			</div>
+		</div>
+	</div>
+	<div class="section">
+		<h3>table</h3>
+		<div class="parent6 parent">
+			<div class="left6 left">left</div>
+			<div class="right6 right">
+				<p>right</p>
+				<p>right</p>
+				<p>right</p>
+			</div>
+		</div>
+	</div>
+	<div class="section">
+		<h3>flex</h3>
+		<div class="parent7 parent">
+			<div class="left7 left">left</div>
+			<div class="right7 right">
+				<p>right</p>
+				<p>right</p>
+				<p>right</p>
+			</div>
+		</div>
+	</div>
+	<h2>等分布局</h2>
+	<div class="section">
+		<h3>float</h3>
+		<div class="parent8 parent clearfix">
+			<div class="column8 column"><p>column</p></div>
+			<div class="column8 column"><p>column</p></div>
+			<div class="column8 column"><p>column</p></div>
+			<div class="column8 column"><p>column</p></div>
+		</div>
+	</div>
+	<div class="section">
+		<h3>flex</h3>
+		<div class="parent9 parent">
+			<div class="column9 column"><p>column</p></div>
+			<div class="column9 column"><p>column</p></div>
+			<div class="column9 column"><p>column</p></div>
+			<div class="column9 column"><p>column</p></div>
+		</div>
+	</div>
+	<h2>等高布局</h2>
+	<div class="section">
+		<h3>table</h3>
+		<div class="parent10 parent">
+			<div class="left10 left">left</div>
+			<div class="right10 right">
+				<p>right</p>
+				<p>right</p>
+				<p>right</p>
+			</div>
+		</div>
+	</div>
+	<div class="section">
+		<h3>flex</h3>
+		<div class="parent11 parent">
+			<div class="left11 left">left</div>
+			<div class="right11 right">
+				<p>right</p>
+				<p>right</p>
+				<p>right</p>
+			</div>
+		</div>
+	</div>
+	<div class="section">
+		<h3>float</h3>
+		<div class="parent12 parent">
+			<div class="left12 left">left</div>
+			<div class="right12 right">
+				<p>right</p>
+				<p>right</p>
+				<p>right</p>
+				<p>right</p>
+				<p>right</p>
+				<p>right</p>
+				<p>right</p>
+				<p>right</p>
+				<p>right</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
