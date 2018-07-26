@@ -111,3 +111,5 @@
 .left7{margin-right: 10px}
 .right7{flex:1;}
 ```
+### 等分布局
+![avatar](https://mirror198829.github.io/static/github/average.png)
