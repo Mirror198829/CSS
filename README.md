@@ -141,7 +141,7 @@
 .left10{display: table-cell;width: 100px;}
 .right10{display: table-cell}
 ```
-### flex
+#### flex
 ``` css
 .parent11{display: flex}
 .left11{margin-right: 10px}
