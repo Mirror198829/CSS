@@ -94,3 +94,20 @@
 ```
 ### 不定宽+自适应
 ![avatar](https://mirror198829.github.io/static/github/colum2.png)
+#### float + overflow
+``` css
+.left5{float:left;}
+.right5{overflow:hidden;}
+```
+### table
+``` css
+.parent6{display: table;width: 100%}
+.left6{display: table-cell;width:0.1%;}
+.right6{display: table-cell}
+```
+### flex
+``` css
+.parent7{display: flex}
+.left7{margin-right: 10px}
+.right7{flex:1;}
+```
