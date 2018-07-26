@@ -20,3 +20,11 @@
 .parent2{}
 .child2{display: table;margin:0 auto;}
 ```
+#### absolute + transform
+``` html
+<div class="parent3 parent">
+  <div class="child3 child">demo</div>
+</div>
+.parent3{position: relative;}
+.child3{position: absolute;left:50%;transform: translateX(-50%);}
+```
