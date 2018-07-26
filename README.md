@@ -12,3 +12,11 @@
 .parent1{text-align: center;}
 .child1{display: inline-block;}
 ```
+#### table + margin
+``` html
+<div class="parent2 parent">
+  <div class="child2 child">demo</div>
+</div>
+.parent2{}
+.child2{display: table;margin:0 auto;}
+```
