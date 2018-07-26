@@ -127,4 +127,9 @@
 .parent8{margin-left: -20px;}
 .column8{float:left;width:25%;padding-right:20px;box-sizing: border-box;}
 ```
-
+#### flex
+``` css
+.parent9{display: flex}
+.column9{flex:1;}
+.column9+.column9{margin-left:20px;}
+```
