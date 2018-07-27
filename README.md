@@ -154,3 +154,5 @@
 .right12{overflow: hidden}
 .left12,.right12{padding-bottom:9999px;margin-bottom: -9999px}
 ```
+## 全屏布局
+![avatar](https://mirror198829.github.io/static/github/fullscreen.png)
