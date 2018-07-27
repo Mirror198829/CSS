@@ -203,6 +203,9 @@
 .left2{width: 200px;}
 .right2{flex:1;}
 ```
+#### vh
+通过vh单位也可实现全屏布局
+
 ![avatar](https://mirror198829.github.io/static/github/fullscreen2.png)
 #### flex 
 通过flex可以实现上述布局
