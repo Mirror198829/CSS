@@ -211,3 +211,4 @@
 通过flex可以实现上述布局
 
 > # Flex布局
+![avatar](https://mirror198829.github.io/static/github/Flex.png)
