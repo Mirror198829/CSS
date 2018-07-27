@@ -182,3 +182,24 @@
 .left1{position: absolute;width:100px;top:50px;bottom:50px;}
 .right1{position: absolute;top:50px;bottom:50px;left:100px;right: 0}
 ```
+#### flex
+``` html
+<div class="wrap">
+  <div class="parent2 parent">
+    <div class="top2 top">top</div>
+    <div class="middle2">
+      <div class="left2 left">left 200px</div>
+      <div class="right2 right">
+        <div style="height:1000px;width:2000px"><p>bottom</p><p>bottom</p><p>bottom</p><p>bottom</p><p>bottom</p><p>bottom</p><p>bottom</p><p>bottom</p><p>bottom</p></div>
+      </div>
+    </div>
+    <div class="bottom2 bottom">bottom</div>
+  </div>
+</div>
+
+/*flex*/
+.parent2{display: flex;flex-direction: column;}
+.middle2{flex:1;display: flex}
+.left2{width: 200px;}
+.right2{flex:1;}
+```
