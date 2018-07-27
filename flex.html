@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>flex</title>
+<style>
+body,html{width:100%;height: 100%;}
+*{margin:0;padding:0;}
+ul,li{list-style:none;}
+.section{padding:15px 0;}
+h1{text-align: center;padding:5px 0;font-size:30px;}
+h2{font-size:20px;}
+h3{margin-bottom:10px;text-indent: 2em;font-size:16px;}
+.parent{border:2px dashed #333;display: flex;flex-wrap:wrap;align-items:stretch;}
+.container{background-color: purple;display: flex}
+.item{height:40px;background-color: orange;color:#fff;margin:10px;text-align: center;padding:0 20px;}
+.container1{flex-direction: row-reverse}
+.container2{flex-direction: column}
+.container3{flex-direction: column-reverse}
+</style>
+</head>
+<body>
+	<h1>CSS布局DEMO——Flex布局</h1>		
+	<h2>flex-direction</h2>
+	<div class="section">
+		<h3>row</h3>
+		<div class="container container0">
+			<div class="item">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>
+		</div>
+	</div>
+	<div class="section">
+		<h3>row-reverse</h3>
+		<div class="container container1">
+			<div class="item">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>
+		</div>
+	</div>
+	<div class="section">
+		<h3>column</h3>
+		<div class="container container2">
+			<div class="item">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>
+		</div>
+	</div>
+	<div class="section">
+		<h3>column</h3>
+		<div class="container container3">
+			<div class="item">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>
+		</div>
+	</div>
+</body>
+</html>
