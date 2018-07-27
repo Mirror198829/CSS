@@ -156,3 +156,29 @@
 ```
 ## 全屏布局
 ![avatar](https://mirror198829.github.io/static/github/fullscreen.png)
+#### position
+``` html
+<div class="wrap">
+  <div class="parent1 parent">
+    <div class="top1 top">top</div>
+    <div class="left1 left">left</div>
+    <div class="right1 right">
+      <div style="height:1000px;width:2000px"><p>bottom</p><p>bottom</p><p>bottom</p><p>bottom</p><p>bottom</p><p>bottom</p>                      <p>bottom</p><p>bottom</p><p>bottom</p></div>
+    </div>
+    <div class="bottom1 bottom">bottom</div>
+  </div>
+</div>
+```
+``` css
+.wrap{width:95%;height:500px;border:2px dashed #333;margin:0 auto;color:#fff;}
+.parent{width:100%;height:100%;}
+.top{height:50px;background-color: #ccc}
+.bottom{height:50px;background-color: #ccc}
+.left{background-color: #cf1200}
+.right{background-color: #4a7fc0;overflow: auto}
+.parent1{position: relative;}
+.top1{position: absolute;top:0;left:0;right: 0}
+.bottom1{position: absolute;bottom:0;left:0;right: 0}
+.left1{position: absolute;width:100px;top:50px;bottom:50px;}
+.right1{position: absolute;top:50px;bottom:50px;left:100px;right: 0}
+```
