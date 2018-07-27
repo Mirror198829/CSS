@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>全屏布局</title>
+<style>
+body,html{width:100%;height: 100%;}
+*{margin:0;padding:0;}
+ul,li{list-style:none;}
+.section{padding:15px 0;}
+h1{text-align: center;padding:5px 0;font-size:30px;}
+h2{font-size:20px;}
+h3{margin-bottom:10px;text-indent: 2em;font-size:16px;}
+.wrap{width:95%;height:500px;border:2px dashed #333;margin:0 auto;color:#fff;}
+.parent{width:100%;height:100%;}
+.top{height:50px;background-color: #ccc}
+.bottom{height:50px;background-color: #ccc}
+.left{background-color: #cf1200}
+.right{background-color: #4a7fc0;overflow: auto}
+.parent1{position: relative;}
+.top1{position: absolute;top:0;left:0;right: 0}
+.bottom1{position: absolute;bottom:0;left:0;right: 0}
+.left1{position: absolute;width:100px;top:50px;bottom:50px;}
+.right1{position: absolute;top:50px;bottom:50px;left:100px;right: 0}
+
+/*flex*/
+.parent2{display: flex;flex-direction: column;}
+.middle2{flex:1;display: flex}
+.left2{width: 200px;}
+.right2{flex:1;}
+</style>
+</head>
+<body>
+	<h1>CSS布局DEMO——全局布局</h1>		
+	<h2>全屏布局</h2>
+	<div class="section">
+		<h3>position（常规方案）</h3>
+		<div class="wrap">
+			<div class="parent1 parent">
+				<div class="top1 top">top</div>
+				<div class="left1 left">left 100px</div>
+				<div class="right1 right">
+					<div style="height:1000px;width:2000px"><p>bottom</p><p>bottom</p><p>bottom</p><p>bottom</p><p>bottom</p><p>bottom</p><p>bottom</p><p>bottom</p><p>bottom</p></div>
+				</div>
+				<div class="bottom1 bottom">bottom</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="section">
+		<h3>flex</h3>
+		<div class="wrap">
+			<div class="parent2 parent">
+				<div class="top2 top">top</div>
+				<div class="middle2">
+					<div class="left2 left">left 200px</div>
+					<div class="right2 right">
+						<div style="height:1000px;width:2000px"><p>bottom</p><p>bottom</p><p>bottom</p><p>bottom</p><p>bottom</p><p>bottom</p><p>bottom</p><p>bottom</p><p>bottom</p></div>
+					</div>
+				</div>
+				<div class="bottom2 bottom">bottom</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
